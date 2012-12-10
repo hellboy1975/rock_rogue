@@ -52,10 +52,10 @@
 	"buffers":
 	[
 		{
-			"file": "/D/workspaces/roguelike/src/main.cpp",
+			"file": "src/main.cpp",
 			"settings":
 			{
-				"buffer_size": 665,
+				"buffer_size": 265,
 				"line_ending": "Windows"
 			}
 		}
@@ -63,9 +63,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 242.0,
+		"height": 311.0,
 		"selected_items":
 		[
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
 			[
 				"remove",
 				"Package Control: Remove Package"
@@ -112,6 +120,14 @@
 	},
 	"file_history":
 	[
+		"/D/workspaces/roguelike/src/main.cpp",
+		"/D/workspaces/roguelike/src/actor.cpp",
+		"/D/workspaces/roguelike/README.md",
+		"/D/workspaces/roguelike/rock_rogue.sublime-build",
+		"/D/workspaces/roguelike/src/map.hpp",
+		"/D/workspaces/roguelike/src/engine.hpp",
+		"/D/workspaces/roguelike/src/map.cpp",
+		"/D/workspaces/roguelike/src/Actor.hpp",
 		"/X/class/SalesOrg.class.php",
 		"/X/class/Cart.class.php",
 		"/X/class/Order.class.php",
@@ -231,15 +247,7 @@
 		"/H/media/webcontent-test/content/0030/product.tpl",
 		"/X/services/unsubscribe.php",
 		"/H/media/webcontent/content/0010/product.tpl",
-		"/H/media/webcontent-test/content/0010/product-feature-list.tpl",
-		"/H/media/webcontent-test/content/0010/product-box-50.tpl",
-		"/H/media/webcontent/content/0010/feature-products.tpl",
-		"/H/media/webcontent-test/content/0010/product-box-feature.tpl",
-		"/H/media/webcontent/content/0010/feature-product-box.tpl",
-		"/H/media/webcontent/content/0010/home.tpl",
-		"/X/smarty/templates/global/footer.tpl",
-		"/X/smarty/templates/global/header-4.tpl",
-		"/H/media/webcontent-test/content/0020/checkout.tpl"
+		"/H/media/webcontent-test/content/0010/product-feature-list.tpl"
 	],
 	"find":
 	{
@@ -443,18 +451,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/D/workspaces/roguelike/src/main.cpp",
+					"file": "src/main.cpp",
 					"settings":
 					{
-						"buffer_size": 665,
+						"buffer_size": 265,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								665,
-								665
+								0,
+								0
 							]
 						],
 						"settings":
@@ -462,9 +470,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
