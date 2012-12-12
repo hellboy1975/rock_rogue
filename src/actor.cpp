@@ -1,5 +1,5 @@
 #include "libtcod.hpp"
-#include "actor.hpp"
+#include "Actor.hpp"
  
 Actor::Actor(int x, int y, int ch, const TCODColor &col) :
     x(x),y(y),ch(ch),col(col) {

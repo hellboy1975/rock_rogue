@@ -1,13 +1,12 @@
 #include "libtcod.hpp"
-#include "actor.hpp"
-#include "map.hpp"
-#include "engine.hpp"
+#include "Actor.hpp"
+#include "Map.hpp"
+#include "Engine.hpp"
 
 Engine::Engine() {
     TCODConsole::initRoot(80,50,"libtcod C++ tutorial",false);
-    player = new Actor(40,25,'@',TCODColor::green);
+    player = new Actor(40,25,'@',TCODColor::white);
     actors.push(player);
-    actors.push(new Actor(60,13,'@',TCODColor::blue));
     map = new Map(80,45);
 }
 
@@ -20,22 +19,22 @@ void Engine::update() {
     TCOD_key_t key;
     TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS,&key,NULL);
     switch(key.vk) {
-        case TCODK_UP : 
+        case TCODK_UP :
             if ( ! map->isWall(player->x,player->y-1)) {
-                player->y--;   
+                player->y--;  
             }
         break;
-        case TCODK_DOWN : 
+        case TCODK_DOWN :
             if ( ! map->isWall(player->x,player->y+1)) {
                 player->y++;
             }
         break;
-        case TCODK_LEFT : 
+        case TCODK_LEFT :
             if ( ! map->isWall(player->x-1,player->y)) {
                 player->x--;
             }
         break;
-        case TCODK_RIGHT : 
+        case TCODK_RIGHT :
             if ( ! map->isWall(player->x+1,player->y)) {
                 player->x++;
             }
@@ -45,12 +44,11 @@ void Engine::update() {
 }
 
 void Engine::render() {
-    TCODConsole::root->clear();
-    // draw the map
-    map->render();
-
-    // draw the actors
-	for (Actor **iterator=actors.begin(); 
+	TCODConsole::root->clear();
+	// draw the map
+	map->render();
+	// draw the actors
+	for (Actor **iterator=actors.begin();
 	    iterator != actors.end(); iterator++) {
 	    (*iterator)->render();
 	}

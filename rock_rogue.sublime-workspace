@@ -52,11 +52,39 @@
 	"buffers":
 	[
 		{
+			"contents": "#include \"libtcod.hpp\"\n#include \"actor.hpp\"\n#include \"map.hpp\"\n#include \"engine.hpp\"\n \nEngine engine;\n \nint main() {\n    while ( !TCODConsole::isWindowClosed() ) {\n        engine.update();\n        engine.render();\n        TCODConsole::flush();\n    }\n    return 0;\n}",
 			"file": "src/main.cpp",
+			"file_size": 279,
+			"file_write_time": 129994432749575258,
 			"settings":
 			{
 				"buffer_size": 265,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/map.cpp",
+			"settings":
+			{
+				"buffer_size": 985,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/actor.cpp",
+			"settings":
+			{
+				"buffer_size": 262,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/engine.cpp",
+			"settings":
+			{
+				"buffer_size": 1365,
+				"line_ending": "Windows",
+				"name": "#include \"libtcod.hpp\""
 			}
 		}
 	],
@@ -446,7 +474,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -461,8 +489,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								213,
+								213
 							]
 						],
 						"settings":
@@ -471,6 +499,96 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/map.cpp",
+					"settings":
+					{
+						"buffer_size": 985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								968,
+								836
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/actor.cpp",
+					"settings":
+					{
+						"buffer_size": 262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								262
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/engine.cpp",
+					"settings":
+					{
+						"buffer_size": 1365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1184,
+								1184
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"libtcod.hpp\"",
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
