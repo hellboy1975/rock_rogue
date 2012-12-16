@@ -1,6 +1,6 @@
 # Git ignore      #
 ################### 
-.sublime*
+*.sublime*
 
  # OS generated files #
 ######################
